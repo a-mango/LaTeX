@@ -1,0 +1,34 @@
+% This document is designed to produce a french speaking report.
+
+\documentclass{article}
+\usepackage[T1]{fontenc}\usepackage[main=french]{babel}\usepackage{url}\usepackage{lastpage}
+\usepackage{fancyhdr}\usepackage{graphicx}\usepackage[a4paper, margin=2cm, footskip=12.3pt]{geometry}
+\usepackage{pdflscape}
+
+\newcommand{\header} {
+    \setlength{\headheight}{30pt}\pagestyle{fancy}
+    \fancyhead[L]{\includegraphics[height=20pt]{./assets/logo.pdf}}\fancyhead[C]{<LABEL>}
+    \fancyhead[R]{<AUTHORS>}\fancyfoot[C]{}
+    \fancyfoot[R]{Page \thepage~sur \pageref{LastPage}}\renewcommand{\footrulewidth}{0.3pt}
+}
+
+\begin{document}
+\header
+
+\section{<SECTION>}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=1\textwidth]{./assets/logo.pdf}
+    \caption{<CAPTION>}
+\end{figure}
+
+
+\begin{itemize}
+    \item <ITEM>
+    \item <ITEM>
+    \item <ITEM>
+    \item <ITEM>
+\end{itemize}
+
+\end{document}
